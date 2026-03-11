@@ -1,7 +1,8 @@
 # Semantic-Preserving Summarization
 
-This repository contains the implementation of a framework for **token-efficient and semantic-preserving opinion summarization** with **Large Language Models (LLMs)**.  
-The goal is to generate compact and balanced summaries of large collections of user opinions while preserving the diversity of viewpoints expressed in the original corpus.
+This repository contains the implementation of a framework for **token-efficient and semantic-preserving opinion summarization** with **Large Language Models (LLMs)**.
+
+The goal is to generate **compact, balanced, and semantically faithful summaries** of large collections of user opinions while preserving the diversity of viewpoints expressed in the original corpus.
 
 The framework combines:
 
@@ -17,7 +18,7 @@ By selecting a compact but semantically representative subset before generation,
 
 Opinion-rich corpora such as product reviews, hotel evaluations, and political discussions often contain:
 
-- large volumes of redundant text,
+- large amounts of redundant text,
 - imbalanced distributions of viewpoints,
 - minority opinions that are easily overlooked.
 
@@ -28,20 +29,22 @@ This repository implements a pipeline that addresses these issues by structuring
 
 ## Main Features
 
-- Multidimensional opinion analysis:
+- **Multidimensional opinion analysis**
   - sentiment
   - topic
   - emotion
   - optional domain-specific facets
 
-- Stratified sampling strategies:
-  - **Knapsack**
-  - **Knapsack-KL**
-  - **KDE**
+- **Stratified sampling strategies**
+  - `Knapsack`
+  - `Knapsack-KL`
+  - `KDE`
 
-- Token-efficient summarization with LLMs
+- **LLM-based summarization**
+  - generation from compact, representative subsets
+  - facet-aware prompting
 
-- Evaluation tools for:
+- **Evaluation tools**
   - topic coverage
   - summary-level semantic similarity
   - token usage
@@ -50,17 +53,20 @@ This repository implements a pipeline that addresses these issues by structuring
 
 ## Repository Structure
 
-A possible high-level organization of the repository is:
+The repository is currently organized as follows:
 
 ```text
 .
-├── data/                 # Input datasets or dataset loaders
-├── preprocessing/        # Data cleaning and preparation scripts
-├── classification/       # Sentiment, emotion, topic, and facet classification
-├── sampling/             # Stratified sampling algorithms
-├── summarization/        # Prompting and LLM summarization
-├── evaluation/           # Metrics and analysis scripts
-├── figures/              # Plots and visual outputs
-├── notebooks/            # Optional exploratory notebooks
-├── results/              # Experimental outputs
+├── classifiers/            # Modules for multidimensional opinion classification
+├── stratifiers/            # Stratified sampling algorithms
+├── utils/                  # Shared utility functions
+├── Main_full_pipeline.py   # Main script for running the full pipeline
 └── README.md
+
+## Contact
+
+For questions, collaborations, or further information: 
+
+Fabrizio Marozzo
+University of Calabria
+Email: fmarozzo@dimes.unical.it
