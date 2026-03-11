@@ -68,6 +68,4 @@ The repository is currently organized as follows:
 
 For questions, collaborations, or further information: 
 
-Fabrizio Marozzo
-University of Calabria
-Email: fmarozzo@dimes.unical.it
+Fabrizio Marozzo (University of Calabria), Email: fmarozzo@dimes.unical.it
