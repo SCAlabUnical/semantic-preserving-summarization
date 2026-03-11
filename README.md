@@ -62,7 +62,7 @@ The repository is currently organized as follows:
 ├── utils/                  # Shared utility functions
 ├── Main_full_pipeline.py   # Main script for running the full pipeline
 └── README.md
-
+```
 
 ## Contact
 
